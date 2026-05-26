@@ -81,41 +81,48 @@ h6, .h6 { font-size: 30px; }
   transform: scale(1.08);
 }
 
-/* tstbite-animation — used in source for recipe cards hover zoom */
 .tstbite-animation {
-  overflow: hidden;
-  display: block;
+   overflow: hidden;
+   display: block;
 }
 
 .tstbite-animation img {
-  transition: transform 0.4s ease;
-  display: block;
-  width: 100%;
-  height: auto;
+   transition: transform 0.4s ease;
+   display: block;
+   width: 100%;
+   height: auto;
 }
 
 .tstbite-card:hover .tstbite-animation img {
-  transform: scale(1.08);
+   transform: scale(1.08);
 }
 
-/* rounded helpers */
+
 .rounded-top-6  { border-radius: 6px 6px 0 0 ; }
 .rounded-bottom-6 { border-radius: 0 0 6px 6px ; }
 .rounded-left-6  { border-radius: 6px 0 0 6px ; }
 .rounded-6      { border-radius: 6px ; }
 .rounded-top-12 { border-radius: 12px 12px 0 0 ; }
 
-.navbar-nav .nav-link {
+.navbar-light .navbar-nav .nav-link {
   font-size: 16px ;
-  font-weight: 600 ;
+  font-weight: 500 ;
   color: #000000 ;
   letter-spacing: 0.3px;
   padding: 8px 16px ;
   transition: color 0.2s;
 }
 
-.navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .dropdown:hover > .nav-link,
+.navbar-light .navbar-nav .show > .nav-link {
   color: var(--tb-brand) ;
+}
+
+.navbar-light .navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
 }
 
 .navbar-nav .dropdown-menu {
@@ -124,6 +131,7 @@ h6, .h6 { font-size: 30px; }
 }
 
 .tstbite-card {
+  position: relative;
   border: none;
   background: transparent;
   transition: all 0.3s;
@@ -350,14 +358,41 @@ a:hover {
   fill: var(--tb-brand) ;
 }
 
-.tstbite-card figcaption a {
-  color: #000000 ;
-}
-.tstbite-card:hover figcaption a {
-  color: var(--tb-brand) ;
+.tstbite-card a {
+  color: #000000;
 }
 
-/* Compatibility padding and margin helpers for legacy Bootstrap 4 classes */
+.tstbite-card:hover a,
+.tstbite-card a:hover {
+  color: var(--tb-brand) !important;
+}
+
+.navbar a svg path {
+  transition: fill 0.2s ease;
+}
+
+.navbar a:hover svg path {
+  fill: var(--tb-brand);
+}
+
+.navbar-nav .dropdown-item:hover {
+  color: var(--tb-brand);
+  background-color: transparent;
+}
+
+.font-weight-semibold {
+  font-weight: 600 !important;
+}
+
+.font-weight-medium {
+  font-weight: 500 !important;
+}
+
+small, .small {
+  font-size: 12px !important;
+}
+
+
 .pl-0 { padding-left: 0 ; }
 .pl-1 { padding-left: 0.25rem ; }
 .pr-0 { padding-right: 0 ; }

@@ -44,19 +44,19 @@ h6, .h6 { font-size: 30px; }
   font-family: 'Inter', sans-serif ;
 }
 
-.f-size-32 { font-size: 32px !important; }
-.f-size-28 { font-size: 28px !important; }
-.f-size-24 { font-size: 24px !important; }
-.f-size-20 { font-size: 20px !important; }
-.f-size-16 { font-size: 16px !important; }
-.f-size-14 { font-size: 14px !important; }
+.f-size-32 { font-size: 32px ; }
+.f-size-28 { font-size: 28px ; }
+.f-size-24 { font-size: 24px ; }
+.f-size-20 { font-size: 20px ; }
+.f-size-16 { font-size: 16px ; }
+.f-size-14 { font-size: 14px ; }
 
 .text-orange {
-  color: var(--tb-brand) !important;
+  color: var(--tb-brand) ;
 }
 
 .bg-orange-light, .bg-primary-light {
-  background-color: var(--tb-bg-light) !important;
+  background-color: var(--tb-bg-light) ;
 }
 
 .stars {
@@ -99,23 +99,23 @@ h6, .h6 { font-size: 30px; }
 }
 
 /* rounded helpers */
-.rounded-top-6  { border-radius: 6px 6px 0 0 !important; }
-.rounded-bottom-6 { border-radius: 0 0 6px 6px !important; }
-.rounded-left-6  { border-radius: 6px 0 0 6px !important; }
-.rounded-6      { border-radius: 6px !important; }
-.rounded-top-12 { border-radius: 12px 12px 0 0 !important; }
+.rounded-top-6  { border-radius: 6px 6px 0 0 ; }
+.rounded-bottom-6 { border-radius: 0 0 6px 6px ; }
+.rounded-left-6  { border-radius: 6px 0 0 6px ; }
+.rounded-6      { border-radius: 6px ; }
+.rounded-top-12 { border-radius: 12px 12px 0 0 ; }
 
 .navbar-nav .nav-link {
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  color: #000000 !important;
+  font-size: 16px ;
+  font-weight: 600 ;
+  color: #000000 ;
   letter-spacing: 0.3px;
-  padding: 8px 16px !important;
+  padding: 8px 16px ;
   transition: color 0.2s;
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--tb-brand) !important;
+  color: var(--tb-brand) ;
 }
 
 .navbar-nav .dropdown-menu {
@@ -129,32 +129,31 @@ h6, .h6 { font-size: 30px; }
   transition: all 0.3s;
 }
 
-/* No underline on any recipe/content links */
 a {
-  text-decoration: none !important;
+  text-decoration: none ;
 }
 
 a:hover {
-  text-decoration: none !important;
+  text-decoration: none ;
 }
 
 .tstbite-card:hover a {
-  color: var(--tb-brand) !important;
+  color: var(--tb-brand) ;
 }
 
 .btn-orange, .btn-primary {
-  background-color: var(--tb-brand) !important;
-  border-color: var(--tb-brand) !important;
-  color: #ffffff !important;
-  font-weight: 700 !important;
+  background-color: var(--tb-brand) ;
+  border-color: var(--tb-brand) ;
+  color: #ffffff ;
+  font-weight: 700 ;
   padding: 10px 24px;
   border-radius: 4px;
   transition: background-color 0.2s;
 }
 
 .btn-orange:hover, .btn-primary:hover {
-  background-color: var(--tb-brand-dark) !important;
-  border-color: var(--tb-brand-dark) !important;
+  background-color: var(--tb-brand-dark) ;
+  border-color: var(--tb-brand-dark) ;
 }
 
 .form-control:focus {
@@ -163,20 +162,20 @@ a:hover {
 }
 
 .tstbite-join-section {
-  background-color: var(--tb-bg-light) !important;
-  border-radius: 6px !important;
+  background-color: var(--tb-bg-light) ;
+  border-radius: 6px ;
 }
 
 .tstbite-join-section h6 {
-  font-size: 30px !important;
-  font-family: 'Playfair Display', Georgia, serif !important;
-  font-weight: 700 !important;
-  color: #000000 !important;
+  font-size: 30px ;
+  font-family: 'Playfair Display', Georgia, serif ;
+  font-weight: 700 ;
+  color: #000000 ;
   line-height: 1.2;
 }
 
 .tstbite-footer {
-  background-color: var(--tb-bg-gray) !important;
+  background-color: var(--tb-bg-gray) ;
   border-top: 1px solid var(--tb-border);
 }
 
@@ -192,16 +191,16 @@ a:hover {
 }
 
 .border-top {
-  border-top: 1px solid var(--tb-border) !important;
+  border-top: 1px solid var(--tb-border) ;
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--tb-border) !important;
+  border-bottom: 1px solid var(--tb-border) ;
 }
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1140px !important;
+    max-width: 1140px ;
   }
 }
 
@@ -245,16 +244,15 @@ a:hover {
   opacity: 0.8;
 }
 
-figcaption.tstbite-collection {
+.tstbite-collection {
   background: #ffffff;
-  border-top: 0;
-  border-left: 1px solid #d8d8d8;
-  border-right: 1px solid #d8d8d8;
-  border-bottom: 1px solid #d8d8d8;
+  border-top: 0 ;
+  border-left: 1px solid #d8d8d8 ;
+  border-right: 1px solid #d8d8d8 ;
+  border-bottom: 1px solid #d8d8d8 ;
   border-radius: 0 0 6px 6px;
 }
 
-/* profile card in sidebar */
 .tstbite-profile {
   overflow: visible;
   border: 1px solid #D8D8D8;
@@ -275,28 +273,27 @@ figcaption.tstbite-collection {
   z-index: 1;
 }
 
-/* hover-orange on Follow button */
-a.hover-orange {
-  padding: 2px 20px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #000000;
-  border-color: #000000;
-  border-radius: 3px;
-  line-height: 21px;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
+.hover-orange {
+  padding: 2px 20px ;
+  font-weight: 500 ;
+  font-size: 14px ;
+  color: #000000 ;
+  border-color: #000000 ;
+  border-radius: 3px ;
+  line-height: 21px ;
+  transition: all 0.2s ease-in-out ;
+  display: inline-block ;
 }
-a.hover-orange:hover {
-  background-color: var(--tb-brand);
-  border-color: var(--tb-brand);
-  color: #fff;
+.hover-orange:hover {
+  background-color: var(--tb-brand) ;
+  border-color: var(--tb-brand) ;
+  color: #fff ;
 }
 
 .tstbite-collection h6 {
   min-height: 72px;
-  font-family: 'Inter', sans-serif !important;
-  font-weight: 600 !important;
+  font-family: 'Inter', sans-serif ;
+  font-weight: 600 ;
 }
 
 .tstbite-instagram-list {
@@ -311,18 +308,17 @@ a.hover-orange:hover {
   margin-left: 35px;
 }
 
-/* Custom compatibility helper classes for Bootstrap 5 and live site parity */
 .float-left {
-  float: left;
+  float: left ;
 }
 .float-right {
-  float: right;
+  float: right ;
 }
 .bg-lightest-gray, .badge-lightest-gray {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9 ;
 }
-.tstbite-footer .text-gray-300, .tstbite-components .text-gray-300 {
-  color: #7f7f7f;
+.text-gray-300 {
+  color: #7f7f7f ;
 }
 .tstbite-footer h6.caption, .tstbite-footer .caption.h6 {
   cursor: pointer;
@@ -345,40 +341,39 @@ a.hover-orange:hover {
   padding-top: 6px;
 }
 .caption, caption {
-  font-size: 14px;
+  font-size: 14px ;
 }
 .tstbite-social a + a {
   margin-left: 25px;
 }
 .tstbite-social a:hover svg path {
-  fill: var(--tb-brand);
+  fill: var(--tb-brand) ;
 }
 
-/* Card title link colors - default to black and orange on hover */
 .tstbite-card figcaption a {
-  color: #000000;
+  color: #000000 ;
 }
 .tstbite-card:hover figcaption a {
-  color: var(--tb-brand);
+  color: var(--tb-brand) ;
 }
 
 /* Compatibility padding and margin helpers for legacy Bootstrap 4 classes */
-.pl-0 { padding-left: 0; }
-.pl-1 { padding-left: 0.25rem; }
-.pr-0 { padding-right: 0; }
-.ml-auto { margin-left: auto; }
-.ml-4 { margin-left: 1.5rem; }
-.mr-0 { margin-right: 0; }
+.pl-0 { padding-left: 0 ; }
+.pl-1 { padding-left: 0.25rem ; }
+.pr-0 { padding-right: 0 ; }
+.ml-auto { margin-left: auto ; }
+.ml-4 { margin-left: 1.5rem ; }
+.mr-0 { margin-right: 0 ; }
 
 @media (min-width: 768px) {
   .mr-md-5 {
-    margin-right: 3rem;
+    margin-right: 3rem ;
   }
 }
 
 @media (min-width: 992px) {
-  .pl-lg-5 { padding-left: 3rem; }
-  .pr-lg-4 { padding-right: 1.5rem; }
-  .pr-lg-5 { padding-right: 3rem; }
-  .mr-lg-4 { margin-right: 1.5rem; }
+  .pl-lg-5 { padding-left: 3rem ; }
+  .pr-lg-4 { padding-right: 1.5rem ; }
+  .pr-lg-5 { padding-right: 3rem ; }
+  .mr-lg-4 { margin-right: 1.5rem ; }
 }

@@ -44,19 +44,19 @@ h6, .h6 { font-size: 30px; }
   font-family: 'Inter', sans-serif ;
 }
 
-.f-size-32 { font-size: 32px; }
-.f-size-28 { font-size: 28px; }
-.f-size-24 { font-size: 24px; }
-.f-size-20 { font-size: 20px; }
-.f-size-16 { font-size: 16px; }
-.f-size-14 { font-size: 14px; }
+.f-size-32 { font-size: 32px !important; }
+.f-size-28 { font-size: 28px !important; }
+.f-size-24 { font-size: 24px !important; }
+.f-size-20 { font-size: 20px !important; }
+.f-size-16 { font-size: 16px !important; }
+.f-size-14 { font-size: 14px !important; }
 
 .text-orange {
-  color: var(--tb-brand);
+  color: var(--tb-brand) !important;
 }
 
 .bg-orange-light, .bg-primary-light {
-  background-color: var(--tb-bg-light);
+  background-color: var(--tb-bg-light) !important;
 }
 
 .stars {
@@ -99,10 +99,10 @@ h6, .h6 { font-size: 30px; }
 }
 
 /* rounded helpers */
-.rounded-top-6  { border-radius: 6px 6px 0 0; }
-.rounded-bottom-6 { border-radius: 0 0 6px 6px; }
-.rounded-left-6  { border-radius: 6px 0 0 6px; }
-.rounded-6      { border-radius: 6px !important;
+.rounded-top-6  { border-radius: 6px 6px 0 0 !important; }
+.rounded-bottom-6 { border-radius: 0 0 6px 6px !important; }
+.rounded-left-6  { border-radius: 6px 0 0 6px !important; }
+.rounded-6      { border-radius: 6px !important; }
 .rounded-top-12 { border-radius: 12px 12px 0 0 !important; }
 
 .navbar-nav .nav-link {
@@ -245,12 +245,12 @@ a:hover {
   opacity: 0.8;
 }
 
-.tstbite-collection {
+figcaption.tstbite-collection {
   background: #ffffff;
-  border-top: 0 !important;
-  border-left: 1px solid #d8d8d8 !important;
-  border-right: 1px solid #d8d8d8 !important;
-  border-bottom: 1px solid #d8d8d8 !important;
+  border-top: 0;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  border-bottom: 1px solid #d8d8d8;
   border-radius: 0 0 6px 6px;
 }
 
@@ -276,21 +276,21 @@ a:hover {
 }
 
 /* hover-orange on Follow button */
-.hover-orange {
-  padding: 2px 20px !important;
-  font-weight: 500 !important;
-  font-size: 14px !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
-  border-radius: 3px !important;
-  line-height: 21px !important;
-  transition: all 0.2s ease-in-out !important;
-  display: inline-block !important;
+a.hover-orange {
+  padding: 2px 20px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  border-color: #000000;
+  border-radius: 3px;
+  line-height: 21px;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
 }
-.hover-orange:hover {
-  background-color: var(--tb-brand) !important;
-  border-color: var(--tb-brand) !important;
-  color: #fff !important;
+a.hover-orange:hover {
+  background-color: var(--tb-brand);
+  border-color: var(--tb-brand);
+  color: #fff;
 }
 
 .tstbite-collection h6 {
@@ -313,16 +313,16 @@ a:hover {
 
 /* Custom compatibility helper classes for Bootstrap 5 and live site parity */
 .float-left {
-  float: left !important;
+  float: left;
 }
 .float-right {
-  float: right !important;
+  float: right;
 }
 .bg-lightest-gray, .badge-lightest-gray {
-  background-color: #f9f9f9 !important;
+  background-color: #f9f9f9;
 }
-.text-gray-300 {
-  color: #7f7f7f !important;
+.tstbite-footer .text-gray-300, .tstbite-components .text-gray-300 {
+  color: #7f7f7f;
 }
 .tstbite-footer h6.caption, .tstbite-footer .caption.h6 {
   cursor: pointer;
@@ -345,40 +345,40 @@ a:hover {
   padding-top: 6px;
 }
 .caption, caption {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .tstbite-social a + a {
   margin-left: 25px;
 }
 .tstbite-social a:hover svg path {
-  fill: var(--tb-brand) !important;
+  fill: var(--tb-brand);
 }
 
 /* Card title link colors - default to black and orange on hover */
 .tstbite-card figcaption a {
-  color: #000000 !important;
+  color: #000000;
 }
 .tstbite-card:hover figcaption a {
-  color: var(--tb-brand) !important;
+  color: var(--tb-brand);
 }
 
 /* Compatibility padding and margin helpers for legacy Bootstrap 4 classes */
-.pl-0 { padding-left: 0 !important; }
-.pl-1 { padding-left: 0.25rem !important; }
-.pr-0 { padding-right: 0 !important; }
-.ml-auto { margin-left: auto !important; }
-.ml-4 { margin-left: 1.5rem !important; }
-.mr-0 { margin-right: 0 !important; }
+.pl-0 { padding-left: 0; }
+.pl-1 { padding-left: 0.25rem; }
+.pr-0 { padding-right: 0; }
+.ml-auto { margin-left: auto; }
+.ml-4 { margin-left: 1.5rem; }
+.mr-0 { margin-right: 0; }
 
 @media (min-width: 768px) {
   .mr-md-5 {
-    margin-right: 3rem !important;
+    margin-right: 3rem;
   }
 }
 
 @media (min-width: 992px) {
-  .pl-lg-5 { padding-left: 3rem !important; }
-  .pr-lg-4 { padding-right: 1.5rem !important; }
-  .pr-lg-5 { padding-right: 3rem !important; }
-  .mr-lg-4 { margin-right: 1.5rem !important; }
+  .pl-lg-5 { padding-left: 3rem; }
+  .pr-lg-4 { padding-right: 1.5rem; }
+  .pr-lg-5 { padding-right: 3rem; }
+  .mr-lg-4 { margin-right: 1.5rem; }
 }

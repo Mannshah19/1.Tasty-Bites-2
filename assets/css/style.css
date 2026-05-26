@@ -213,7 +213,7 @@ a:hover {
 }
 
 .fabrx-ratings:not(:checked) > input {
-  display: none;
+  display: none
 }
 
 .rating:not(:checked) > label {

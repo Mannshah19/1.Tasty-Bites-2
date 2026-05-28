@@ -36,6 +36,15 @@ h4, .h4 { font-size: 45px; }
 h5, .h5 { font-size: 36px; }
 h6, .h6 { font-size: 30px; }
 
+@media (max-width: 767px) {
+  h1, .h1 { font-size: 38px; }
+  h2, .h2 { font-size: 32px; }
+  h3, .h3 { font-size: 28px; }
+  h4, .h4 { font-size: 24px; }
+  h5, .h5 { font-size: 22px; }
+  h6, .h6 { font-size: 20px; }
+}
+
 .playfair-font {
   font-family: 'Playfair Display', Georgia, serif ;
 }
@@ -50,6 +59,13 @@ h6, .h6 { font-size: 30px; }
 .f-size-20 { font-size: 20px ; }
 .f-size-16 { font-size: 16px ; }
 .f-size-14 { font-size: 14px ; }
+
+@media (max-width: 767px) {
+  .f-size-32 { font-size: 24px ; }
+  .f-size-28 { font-size: 22px ; }
+  .f-size-24 { font-size: 20px ; }
+  .f-size-20 { font-size: 18px ; }
+}
 
 .text-orange {
   color: var(--tb-brand) ;
@@ -104,6 +120,15 @@ h6, .h6 { font-size: 30px; }
 .rounded-6      { border-radius: 6px ; }
 .rounded-top-12 { border-radius: 12px 12px 0 0 ; }
 
+@media (max-width: 767px) {
+  .rounded-left-6 {
+    border-radius: 6px 6px 0 0 !important;
+  }
+  .rounded-sm-top-6 {
+    border-radius: 6px 6px 0 0 !important;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link {
   font-size: 16px ;
   font-weight: 500 ;
@@ -120,9 +145,11 @@ h6, .h6 { font-size: 30px; }
   color: var(--tb-brand) ;
 }
 
-.navbar-light .navbar-nav .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+@media (min-width: 768px) {
+  .navbar-light .navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .navbar-nav .dropdown-menu {
